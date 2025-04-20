@@ -23,3 +23,4 @@ This is a fully responsive React component that showcases the **Viralish Brand**
 
    ```bash
    npm install
+   npm run dev
