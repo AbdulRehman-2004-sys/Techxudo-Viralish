@@ -1,0 +1,153 @@
+.elementor-2572 .elementor-element.elementor-element-e79b262 {
+    --display: flex;
+    --flex-direction: column;
+    --container-widget-width: 100%;
+    --container-widget-height: initial;
+    --container-widget-flex-grow: 0;
+    --container-widget-align-self: initial;
+    --flex-wrap-mobile: wrap;
+}
+
+.elementor-2572 .elementor-element.elementor-element-30112cb>.elementor-widget-container {
+    border-radius: 6px 6px 6px 6px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-30112cb .elementor-wrapper {
+    --video-aspect-ratio: 0.5625;
+}
+
+.elementor-2572 .elementor-element.elementor-element-55a103d {
+    --display: flex;
+    --flex-direction: row;
+    --container-widget-width: initial;
+    --container-widget-height: 100%;
+    --container-widget-flex-grow: 1;
+    --container-widget-align-self: stretch;
+    --flex-wrap-mobile: wrap;
+    --gap: 0px 0px;
+    --row-gap: 0px;
+    --column-gap: 0px;
+    --margin-top: 0px;
+    --margin-bottom: 0px;
+    --margin-left: 0px;
+    --margin-right: 0px;
+    --padding-top: 0px;
+    --padding-bottom: 0px;
+    --padding-left: 0px;
+    --padding-right: 0px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-6a4e7d1 {
+    --display: flex;
+}
+
+.elementor-2572 .elementor-element.elementor-element-140baed .elementor-counter-number-wrapper {
+    color: #FFFFFF;
+    font-family: "Kilimanjaro", Sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-140baed .elementor-counter-title {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-c3d120d {
+    --display: flex;
+}
+
+.elementor-2572 .elementor-element.elementor-element-335a604 .elementor-counter-number-wrapper {
+    color: #FFFFFF;
+    font-family: "Kilimanjaro", Sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-335a604 .elementor-counter-title {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-65c1ebb {
+    --display: flex;
+}
+
+.elementor-2572 .elementor-element.elementor-element-0d2a0cd .elementor-counter-number-wrapper {
+    color: #FFFFFF;
+    font-family: "Kilimanjaro", Sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.elementor-2572 .elementor-element.elementor-element-0d2a0cd .elementor-counter-title {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+#elementor-popup-modal-2572 .dialog-widget-content {
+    background-color: #292929;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
+}
+
+#elementor-popup-modal-2572 {
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+}
+
+#elementor-popup-modal-2572 .dialog-message {
+    width: 352px;
+    height: auto;
+}
+
+#elementor-popup-modal-2572 .dialog-close-button {
+    display: flex;
+    font-size: 25px;
+}
+
+#elementor-popup-modal-2572 .dialog-close-button i {
+    color: #CB1919;
+}
+
+#elementor-popup-modal-2572 .dialog-close-button svg {
+    fill: #CB1919;
+}
+
+@media(max-width:767px) {
+    .elementor-2572 .elementor-element.elementor-element-6a4e7d1 {
+        --width: 33%;
+    }
+    .elementor-2572 .elementor-element.elementor-element-140baed .elementor-counter-number-wrapper {
+        font-size: 22px;
+        line-height: 1.1em;
+    }
+    .elementor-2572 .elementor-element.elementor-element-140baed .elementor-counter-title {
+        font-size: 10px;
+        line-height: 1.3em;
+    }
+    .elementor-2572 .elementor-element.elementor-element-c3d120d {
+        --width: 33%;
+    }
+    .elementor-2572 .elementor-element.elementor-element-335a604 .elementor-counter-number-wrapper {
+        font-size: 22px;
+        line-height: 1.1em;
+    }
+    .elementor-2572 .elementor-element.elementor-element-335a604 .elementor-counter-title {
+        font-size: 10px;
+        line-height: 1.3em;
+    }
+    .elementor-2572 .elementor-element.elementor-element-65c1ebb {
+        --width: 33%;
+    }
+    .elementor-2572 .elementor-element.elementor-element-0d2a0cd .elementor-counter-number-wrapper {
+        font-size: 22px;
+        line-height: 1.1em;
+    }
+    .elementor-2572 .elementor-element.elementor-element-0d2a0cd .elementor-counter-title {
+        font-size: 10px;
+        line-height: 1.3em;
+    }
+}

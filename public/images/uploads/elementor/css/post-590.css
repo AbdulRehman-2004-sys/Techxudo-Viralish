@@ -1,0 +1,110 @@
+.elementor-kit-590 {
+    --e-global-color-primary: #CB1919;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #CB1919;
+    --e-global-color-5c3a7ea: #FFFFFF;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+    background-color: #30353C;
+}
+
+.elementor-kit-590 button,
+.elementor-kit-590 input[type="button"],
+.elementor-kit-590 input[type="submit"],
+.elementor-kit-590 .elementor-button {
+    background-color: var( --e-global-color-primary);
+    color: #FFFFFF;
+}
+
+.elementor-kit-590 e-page-transition {
+    background-color: #FFBC7D;
+}
+
+.elementor-kit-590 a {
+    color: #CB1919;
+}
+
+.elementor-kit-590 h1 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-kit-590 h2 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-kit-590 h3 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-kit-590 h4 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-kit-590 h5 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-kit-590 h6 {
+    font-family: "Kilimanjaro", Sans-serif;
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1270px;
+}
+
+.e-con {
+    --container-max-width: 1270px;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+    --widgets-spacing-row: 20px;
+    --widgets-spacing-column: 20px;
+}
+
+{}
+
+h1.entry-title {
+    display: var(--page-title-display);
+}
+
+@media(max-width:1024px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1024px;
+    }
+    .e-con {
+        --container-max-width: 1024px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 767px;
+    }
+    .e-con {
+        --container-max-width: 767px;
+    }
+}
+
+/* Start Custom Fonts CSS */
+
+@font-face {
+    font-family: 'Kilimanjaro';
+    font-style: normal;
+    font-weight: normal;
+    font-display: auto;
+    src: url('https://viralish.com/wp-content/uploads/2024/09/KilimanjaroSansTallRound1.ttf') format('truetype');
+}
+
+/* End Custom Fonts CSS */
