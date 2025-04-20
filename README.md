@@ -1,12 +1,25 @@
-# React + Vite
+# Viralish Brand Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fully responsive React component that showcases the **Viralish Brand** and includes a contact form integration powered by **Web3Forms**. It is designed for marketing and outreach purposes with a modern and stylish UI using **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔥 Hero section with background image and call-to-action
+- 🎯 Highlighted brand features in a responsive grid
+- 📨 Contact form integrated with Web3Forms API
+- 📱 Fully responsive design for all screen sizes
+- 🎨 Styled with Tailwind CSS
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Tailwind CSS
+- Web3Forms API (for form submissions)
+
+## How to Use
+
+1. Clone this repository
+2. Install dependencies:
+
+   ```bash
+   npm install
