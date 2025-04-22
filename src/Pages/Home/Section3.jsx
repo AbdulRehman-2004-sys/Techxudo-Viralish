@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
+import CountUp from "react-countup";
+
+// Counter data for the slides
+const counterData = [
+  {
+    image: "/images/uploads/2024/09/LIT-Final-low.gif",
+    views: 81,
+    suffix: "M+",
+  },
+  {
+    image: "/images/uploads/2024/09/Snapinsta.app_video_E6486A1750BE76AE648C9DA0869AB781_video_dashinit-low.gif",
+    views: 102,
+    suffix: "M+",
+  },
+  {
+    image: "/images/uploads/2024/09/Snapinsta.app_video_4C4C3646368EE82C8E8E8F9F2348DF93_video_dashinit-low.gif",
+    views: 18.7,
+    suffix: "M+",
+  },
+  {
+    image: "/images/uploads/2024/09/60s-AI-voice-Starburst-Drink-low.gif",
+    views: 48,
+    suffix: "M+",
+  },
+  {
+    image: "/images/uploads/2024/09/30-second-car-shower-low.gif",
+    views: 89,
+    suffix: "M+",
+  },
+];
 
 const Section3 = () => {
   return (
@@ -35,37 +65,34 @@ const Section3 = () => {
   );
 };
 
-const counterData = [
-  {
-    image: "/images/uploads/2024/09/LIT-Final-low.gif",
-    views: "81",
-    suffix: "M+",
-  },
-  {
-    image: "/images/uploads/2024/09/Snapinsta.app_video_E6486A1750BE76AE648C9DA0869AB781_video_dashinit-low.gif",
-    views: "102",
-    suffix: "M+",
-  },
-  {
-    image: "/images/uploads/2024/09/Snapinsta.app_video_4C4C3646368EE82C8E8E8F9F2348DF93_video_dashinit-low.gif",
-    views: "18.7",
-    suffix: "M+",
-  },
-  {
-    image: "/images/uploads/2024/09/60s-AI-voice-Starburst-Drink-low.gif",
-    views: "48",
-    suffix: "M+",
-  },
-  {
-    image: "/images/uploads/2024/09/30-second-car-shower-low.gif",
-    views: "89",
-    suffix: "M+",
-  },
-];
-
 const CarouselCounter = () => {
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef(null);
+
+  // Intersection Observer to detect when the section comes into view
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      if (entry.isIntersecting) {
+        setIsInView(true);
+      } else {
+        setIsInView(false);
+      }
+    }, { threshold: 0.5 });
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="w-full bg-black py-6">
+    <div className="w-full bg-black py-6" ref={sectionRef}>
       <Swiper
         slidesPerView={1}
         spaceBetween={15}
@@ -88,7 +115,16 @@ const CarouselCounter = () => {
               />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-60 rounded-xl p-4 w-[90%] text-center">
                 <h2 className="text-4xl md:text-6xl font-bold text-white">
-                  {item.views}
+                  {isInView ? (
+                    <CountUp
+                      start={0}
+                      end={item.views}
+                      duration={1.5}
+                      decimals={item.views % 1 !== 0 ? 1 : 0}
+                    />
+                  ) : (
+                    item.views
+                  )}
                   <span className="text-lg font-medium ml-1">
                     {item.suffix}
                   </span>
