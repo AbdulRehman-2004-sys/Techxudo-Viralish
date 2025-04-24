@@ -46,20 +46,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link 
-                to="/creators" 
+              <a 
+                href="#work-with-us" 
                 className={`${navLinkClass('/creators')} text-sm lg:text-base transition-all duration-300 hover:scale-105`}
               >
                 Creators
-              </Link>
+              </a>
             </li>
             <li>
-              <Link 
-                to="/brand" 
+              <a 
+                href="#brandscarousel" 
                 className={`${navLinkClass('/brand')} text-sm lg:text-base transition-all duration-300 hover:scale-105`}
               >
                 Brands
-              </Link>
+              </a>
             </li>
           </ul>
 

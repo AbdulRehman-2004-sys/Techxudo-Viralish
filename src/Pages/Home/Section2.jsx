@@ -78,12 +78,12 @@ const Section2 = () => {
                 at scale.
               </p>
 
-              <Link
-                to="/brand"
+              <a
+                href="#brandscarousel"
                 className="w-full sm:w-auto px-6 py-4 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-all duration-300 flex justify-center items-center transform hover:scale-105 hover:shadow-lg text-base sm:text-lg font-medium"
               >
                 Work With Viralish
-              </Link>
+              </a>
             </div>
           </div>
         </div>

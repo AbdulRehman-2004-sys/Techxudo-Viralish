@@ -44,7 +44,7 @@ const Section1 = () => {
 
       <div className="absolute z-50 w-full h-full bg-gradient-to-t from-gray-800 to-transparent opacity-50"></div>
       {/* GIF Cards Section */}
-      <div className="flex flex-wrap justify-center gap-4">
+      <div id="brandscarousel" className="flex flex-wrap justify-center gap-4">
         {cards.map((card, i) => (
           <a
             href={card.href}
@@ -78,7 +78,7 @@ const Section1 = () => {
       </div>
 
       {/* Carousel */}
-      <div className="mt-10 w-full overflow-hidden">
+      <div  className="mt-10 w-full overflow-hidden">
         <div className="flex items-center gap-10 animate-scroll whitespace-nowrap">
           {carouselImages.map((img, index) => (
             <img
